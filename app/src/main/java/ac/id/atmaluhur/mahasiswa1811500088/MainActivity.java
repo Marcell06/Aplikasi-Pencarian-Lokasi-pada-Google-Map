@@ -70,10 +70,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         BottomNavigationView navView = findViewById(R.id.nav_view);
 
 
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment1);
-        //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_a);
         NavigationUI.setupWithNavController(navView, navController);
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
@@ -145,7 +142,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                     fragment = new HospitalFragment();
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment1, fragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_a, fragment).commit();
             return true;
         }
     };
