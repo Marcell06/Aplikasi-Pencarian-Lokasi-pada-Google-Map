@@ -172,7 +172,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Log.d("onClick", url);
         GetNearby getNearbyPlaceData = new GetNearby();
         getNearbyPlaceData.execute(DataTransfer);
-        Toast.makeText(MainActivity.this, "Nearby School", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Nearby School", Toast.LENGTH_SHORT).show();
     }
     public void restaurant(){
         mMap.clear();
@@ -188,7 +188,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Log.d("onClick", url);
         GetNearby getNearbyPlaceData = new GetNearby();
         getNearbyPlaceData.execute(DataTransfer);
-        Toast.makeText(MainActivity.this, "Nearby Restaurant", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Nearby Restaurant", Toast.LENGTH_SHORT).show();
     }
     public void hospital(){
         mMap.clear();
@@ -204,7 +204,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Log.d("onClick", url);
         GetNearby getNearbyPlaceData = new GetNearby();
         getNearbyPlaceData.execute(DataTransfer);
-        Toast.makeText(MainActivity.this, "Nearby Hospital", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Nearby Hospital", Toast.LENGTH_SHORT).show();
     }
     protected synchronized void buildGoogleApiClient(){
         mGoogleApiClient = new GoogleApiClient.Builder(this)
